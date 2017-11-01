@@ -1,0 +1,235 @@
+
+* {box-sizing: border-box;
+   font-family: sans-serif, tahoma;}
+.container {
+    padding: 2px;
+}
+.menu-container {
+    width: 20%;
+    float: left;
+    height: auto;
+    overflow: auto;
+}
+.header, .footer{
+    width: 80%;
+    float: right;
+    background-color: #5C5757;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.content{
+    background-color: #EE6E73;
+    width: 80%;
+    height: 90vh;
+    float: right;
+    text-align: center;
+    position: relative
+}
+li.search .search-wrapper input#search {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 45px 0 15px;
+    border: 2;
+}
+.search-wrapper {
+    padding: 2px;
+    margin: 2px;
+}
+#logo-container { 
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 5px;
+    pointer-events: none;
+}
+.panel{
+    background-color: #ffffff;
+}
+/* Main menu CSS */
+#menu {
+    display: none;
+    margin : 5px;
+    width: 35px;
+}
+#menu div{
+    width: 100%;
+    height: 2px;
+    padding: 2px;
+    margin: 2px 0;
+    background: black;
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+}
+.main{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.panel {
+    background-color: #ffffff;
+    color:#444;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+div ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    padding-left:3%;
+}
+li a{
+    background-color: #FFFFFF;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    transition: 0.4s;
+}
+li a:hover 
+{
+     background-color:#ccc; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+.overlayOpen {
+  opacity: 1 !important;
+  height: 50% !important;
+  width: 100% !important;
+}
+.overlayClose{
+    display: none;
+}
+.panel{
+    margin-left: 10px;
+}
+#change-text {
+    font-size: 30px;
+}
+.menu-container #menu div{
+    padding: 1px;
+    margin: 3px 0;
+    background: #fff;
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+@media only screen and (min-width: 780px) {
+    #menu{
+        display: none;
+    }
+    .menu-container .main{
+        display: block;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .menu-container {
+        width: 50%;
+        float: left;
+        z-index : 10;
+        position: absolute;
+        height: 100%;
+        overflow: auto
+    }
+    .menu-container .main {
+        display: none;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        margin: 2px 0;
+        float: left;
+        margin-left: -10px;
+        margin-top: -10px;
+        border: 1px solid #ccc;
+        box-sizing: content-box;
+    }
+    #menu {
+        display: block;
+        margin : 5px;
+
+    }
+    .menu-container #menu div{
+        padding: 1px;
+        margin: 3px 0;
+        background: #fff;
+        display: block;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+    }
+    .content {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+ }
+ 
+ @media only screen and (max-width: 480px) {
+    .menu-container {
+        width: 70%;
+        float: left;
+        z-index : 10;
+        position: absolute;
+        height: 100%;
+        overflow: auto
+    }
+    .menu-container .main {
+        display: none;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        margin: 2px 0;
+        float: left;
+        margin-left: -10px;
+        margin-top: -10px;
+        border: 1px solid #ccc;
+        box-sizing: content-box;
+    }
+    #menu {
+        display: block;
+        margin : 5px;
+
+    }
+    .menu-container #menu div{
+        padding: 1px;
+        margin: 3px 0;
+        background: #fff;
+        display: block;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+    }
+    .content {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+ }
